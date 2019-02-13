@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+// 项目名称
+def moduleName = 'lib_common'
+// 依赖库
+def library = rootProject.ext.dependencies
+
+android {
+    compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+//        versionCode parseVersionCodeFromVersionName(moduleName, VERSION_NAME)
+        versionCode 1
+        versionName VERSION_NAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    /* Java8支持 */
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // 阿里 fast json
+    api "com.alibaba:fastjson:$library.alibaba_fastjson"
+
+    // android support
+    api "com.android.support:appcompat-v7:$library.android_support_appcompat"
+
+    /*  android support test */
+    testImplementation "junit:junit:$library.junit"
+    testImplementation "org.mockito:mockito-core:$library.mockito"
+    androidTestImplementation "com.android.support.test:runner:$library.test_runner"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$library.test_espresso_core"
+    androidTestImplementation "com.android.support:support-annotations:$library.android_support_annotations"
+}
