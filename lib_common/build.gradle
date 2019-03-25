@@ -15,7 +15,7 @@ android {
         versionCode 1
         versionName VERSION_NAME
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     /* Java8支持 */
@@ -32,12 +32,12 @@ dependencies {
     api "com.alibaba:fastjson:$library.alibaba_fastjson"
 
     // android support
-    api "com.android.support:appcompat-v7:$library.android_support_appcompat"
+    api "androidx.appcompat:appcompat:$library.android_support_appcompat"
 
     /*  android support test */
     testImplementation "junit:junit:$library.junit"
     testImplementation "org.mockito:mockito-core:$library.mockito"
-    androidTestImplementation "com.android.support.test:runner:$library.test_runner"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$library.test_espresso_core"
-    androidTestImplementation "com.android.support:support-annotations:$library.android_support_annotations"
+    androidTestImplementation "androidx.test:runner:$library.test_runner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$library.test_espresso_core"
+    androidTestImplementation "androidx.annotation:annotation:$library.android_support_annotations"
 }

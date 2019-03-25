@@ -2,15 +2,16 @@ package com.lzy.glide.glideimpl;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.FloatRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.FloatRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -32,30 +33,28 @@ import java.io.File;
  */
 public class GlideLoaderConfig extends CommonLoaderConfig {
 
-
-    public Fragment fragmentV4;
-    public android.app.Fragment fragmentApp;
-    public FragmentActivity fragmentActivity;
-    public Activity activity;
-    public Context context;
-    public View view;
-    public int overrideSize;//指定图片尺寸
-    public boolean isGif;//gif
-    public boolean isBitmap;//Bitmap
-    public boolean isCircleCrop;//circle crop an image
-    public RequestListener<Drawable> requestListener4Drawable;//加载监听
-    public RequestListener<Bitmap> requestListener4Bitmap;//加载监听
+    Fragment fragmentV4;
+    FragmentActivity fragmentActivity;
+    Activity activity;
+    Context context;
+    View view;
+    int overrideSize;//指定图片尺寸
+    boolean isGif;//gif
+    boolean isBitmap;//Bitmap
+    boolean isCircleCrop;//circle crop an image
+    RequestListener<Drawable> requestListener4Drawable;//加载监听
+    RequestListener<Bitmap> requestListener4Bitmap;//加载监听
     public DiskCacheStrategy diskCacheStrategy;//磁盘缓存策略
-    public Transformation<Bitmap>[] transformations;//多种形状变幻
-    public Transformation<Bitmap> transformation;//变幻形状
+    Transformation<Bitmap>[] transformations;//多种形状变幻
+    Transformation<Bitmap> transformation;//变幻形状
     public View targetView;//最后加载到view中
     public Target<Drawable> targetDrawable;//最后加载到target中
-    public Target<Bitmap> targetBitmap;//最后加载到target中
-    public float thumbnail;//缩略图
-    public RequestBuilder<Bitmap>[] thumbnails4Bitmap;
-    public RequestBuilder<Drawable>[] thumbnails4Drawable;
-    public boolean isDontAnimate;//不使用动画
-    public RequestOptions requestOptions;//外部传入的配置项
+    Target<Bitmap> targetBitmap;//最后加载到target中
+    float thumbnail;//缩略图
+    RequestBuilder<Bitmap>[] thumbnails4Bitmap;
+    RequestBuilder<Drawable>[] thumbnails4Drawable;
+    boolean isDontAnimate;//不使用动画
+    RequestOptions requestOptions;//外部传入的配置项
 
 
     /**
@@ -143,13 +142,6 @@ public class GlideLoaderConfig extends CommonLoaderConfig {
     @Override
     public GlideLoaderConfig with(@NonNull Fragment fragment) {
         this.fragmentV4 = fragment;
-        return this;
-    }
-
-    @NonNull
-    @Override
-    public GlideLoaderConfig with(@NonNull android.app.Fragment fragment) {
-        this.fragmentApp = fragment;
         return this;
     }
 
@@ -277,7 +269,6 @@ public class GlideLoaderConfig extends CommonLoaderConfig {
     public void reset() {
         super.reset();
         fragmentV4 = null;
-        fragmentApp = null;
         fragmentActivity = null;
         activity = null;
         view = null;
@@ -300,5 +291,4 @@ public class GlideLoaderConfig extends CommonLoaderConfig {
         isDontAnimate = false;
         requestOptions = null;
     }
-
 }

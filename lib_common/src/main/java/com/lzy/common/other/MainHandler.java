@@ -2,7 +2,7 @@ package com.lzy.common.other;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * desc: 主线程Handler <br/>

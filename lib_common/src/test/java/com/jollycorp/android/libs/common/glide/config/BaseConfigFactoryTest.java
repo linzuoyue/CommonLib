@@ -1,7 +1,7 @@
 package com.jollycorp.android.libs.common.glide.config;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.Pools;
+import androidx.annotation.NonNull;
+import androidx.core.util.Pools;
 
 import com.jollycorp.android.libs.common.glide.glideimpl.GlideLoaderConfig;
 

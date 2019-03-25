@@ -1,6 +1,6 @@
 package com.lzy.common.tool;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * desc:文本工具类, 该工具作为 {@link android.text.TextUtils}补充 <br/>
