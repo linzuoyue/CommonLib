@@ -4,6 +4,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringDef;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.security.MessageDigest;
 
 /**
@@ -15,6 +17,7 @@ import java.security.MessageDigest;
 public interface ToolEncrypt {
 
     @StringDef
+    @Retention(RetentionPolicy.SOURCE)
     @interface ENCRYPT_TYPE {
         /**
          * MD5加密方式

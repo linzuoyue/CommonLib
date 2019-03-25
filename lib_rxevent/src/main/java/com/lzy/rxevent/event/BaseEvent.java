@@ -10,19 +10,19 @@ import android.support.annotation.Nullable;
  * date: 2018/8/15 <br/>
  * since V mello 1.0.0 <br/>
  */
-public class BaseEvent<T,ST,E>{
+public class BaseEvent<E>{
 
     /**
      * 类型
      */
     @NonNull
-    private T type;
+    private Integer type;
 
     /**
      * 子类型
      */
     @Nullable
-    private ST subType;
+    private Integer subType;
 
     /**
      * 额外
@@ -30,36 +30,36 @@ public class BaseEvent<T,ST,E>{
     @Nullable
     private E extra;
 
-    public BaseEvent(@NonNull T type) {
+    public BaseEvent(@NonNull Integer type) {
         this(type, null);
 
     }
 
-    public BaseEvent(T type, @Nullable ST subType) {
+    public BaseEvent(@NonNull Integer type, @Nullable Integer subType) {
         this(type, subType, null);
     }
 
-    public BaseEvent(@NonNull T type, @Nullable ST subType, @Nullable E extra) {
+    public BaseEvent(@NonNull Integer type, @Nullable Integer subType, @Nullable E extra) {
         this.type = type;
         this.subType = subType;
         this.extra = extra;
     }
 
     @NonNull
-    public T getType() {
+    public Integer getType() {
         return type;
     }
 
-    public void setType(@NonNull T type) {
+    public void setType(@NonNull Integer type) {
         this.type = type;
     }
 
     @Nullable
-    public ST getSubType() {
+    public Integer getSubType() {
         return subType;
     }
 
-    public void setSubType(@Nullable ST subType) {
+    public void setSubType(@Nullable Integer subType) {
         this.subType = subType;
     }
 
