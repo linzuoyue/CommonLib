@@ -3,11 +3,12 @@ package com.lzy.common.tool;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+
+import androidx.annotation.Nullable;
 
 /**
  * desc: 软键盘工具类 <br/>

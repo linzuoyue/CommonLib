@@ -1,6 +1,6 @@
 package com.lzy.glide.glideimpl;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.lzy.glide.config.BaseConfigFactory;
 

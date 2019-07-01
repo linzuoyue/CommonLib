@@ -2,7 +2,8 @@ package com.lzy.glide.strategy;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 /**
  * desc: 图片加载框架缓存处理 <br/>

@@ -8,6 +8,9 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Looper;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
@@ -21,9 +24,6 @@ import com.bumptech.glide.request.transition.Transition;
 import com.lzy.glide.ILoad;
 import com.lzy.glide.config.GlideCacheConfig;
 import com.lzy.glide.glideimpl.transform.RoundedCornersTransformation;
-
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import static com.lzy.glide.config.CommonLoaderConfig.RESOURCE_TYPE_FILE;
 import static com.lzy.glide.config.CommonLoaderConfig.RESOURCE_TYPE_RES_ID;

@@ -1,7 +1,7 @@
 package com.lzy.glide.strategy;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * desc: 图片加载框架需实现的功能 <br/>

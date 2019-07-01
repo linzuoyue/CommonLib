@@ -2,8 +2,9 @@ package com.lzy.glide;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 
 import com.lzy.glide.config.LoaderConfig;
 import com.lzy.glide.glideimpl.GlideImageLoader;

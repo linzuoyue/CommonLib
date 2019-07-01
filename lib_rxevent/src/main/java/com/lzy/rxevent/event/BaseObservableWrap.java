@@ -1,9 +1,12 @@
 package com.lzy.rxevent.event;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
+import com.lzy.rxevent.ActivityRx;
 import com.lzy.rxevent.BusinessFragmentBase;
+import com.lzy.rxevent.FragmentRx;
+import com.lzy.rxevent.ToolActivity;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 import com.trello.rxlifecycle2.android.FragmentEvent;
 
@@ -11,9 +14,6 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
 import io.reactivex.plugins.RxJavaPlugins;
-import com.lzy.rxevent.ActivityRx;
-import com.lzy.rxevent.FragmentRx;
-import com.lzy.rxevent.ToolActivity;
 
 /**
  * desc: Observable 的封装，减少模版代码<br/>
