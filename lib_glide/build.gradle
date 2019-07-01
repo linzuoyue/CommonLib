@@ -13,8 +13,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -47,10 +45,5 @@ dependencies {
         exclude(group: 'com.android.support')
     }
 
-    testImplementation "junit:junit:$library.junit"
-    testImplementation "org.mockito:mockito-core:$library.mockito"
-    androidTestImplementation "com.android.support.test:runner:$library.test_runner"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$library.test_espresso_core"
-    androidTestImplementation "com.android.support:support-annotations:$library.android_support_annotations"
 
 }
