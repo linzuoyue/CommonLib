@@ -1,7 +1,7 @@
 package com.lzy.common.tool;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Base64;
 
 import java.net.URLDecoder;

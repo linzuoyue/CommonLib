@@ -1,6 +1,6 @@
 package com.lzy.common.tool;
 
-import androidx.annotation.IntRange;
+import android.support.annotation.IntRange;
 
 import java.math.BigDecimal;
 

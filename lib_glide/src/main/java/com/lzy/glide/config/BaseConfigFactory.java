@@ -1,7 +1,7 @@
 package com.lzy.glide.config;
 
-import androidx.annotation.NonNull;
-import androidx.core.util.Pools;
+import android.support.annotation.NonNull;
+import android.support.v4.util.Pools;
 
 
 /**

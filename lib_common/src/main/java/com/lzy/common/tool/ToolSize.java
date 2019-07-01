@@ -1,8 +1,8 @@
 package com.lzy.common.tool;
 
 import android.content.Context;
-import androidx.annotation.DimenRes;
-import androidx.annotation.NonNull;
+import android.support.annotation.DimenRes;
+import android.support.annotation.NonNull;
 
 /**
  * desc: 尺寸工具类 <br/>

@@ -1,6 +1,7 @@
 package com.lzy.rxevent.event;
 
-import androidx.annotation.NonNull;
+
+import android.support.annotation.NonNull;
 
 import com.lzy.rxevent.BusinessFragmentBase;
 import com.trello.rxlifecycle2.android.ActivityEvent;

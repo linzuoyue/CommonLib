@@ -22,8 +22,8 @@ import com.lzy.glide.ILoad;
 import com.lzy.glide.config.GlideCacheConfig;
 import com.lzy.glide.glideimpl.transform.RoundedCornersTransformation;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 import static com.lzy.glide.config.CommonLoaderConfig.RESOURCE_TYPE_FILE;
 import static com.lzy.glide.config.CommonLoaderConfig.RESOURCE_TYPE_RES_ID;
